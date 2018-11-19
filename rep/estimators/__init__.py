@@ -10,4 +10,4 @@ except:
     pass
 
 
-from .xgboost import XGBoostClassifier, XGBoostRegressor
+from .xgboost_ import XGBoostClassifier, XGBoostRegressor
