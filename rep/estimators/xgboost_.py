@@ -207,7 +207,7 @@ class XGBoostBase(object):
         """Sklearn-way of returning feature importance.
         This returned as numpy.array, assuming that initially passed train_features=None """
         self._check_fitted()
-        return self.get_feature_importances().ix[self.features, 'effect'].values
+        return self.get_feature_importances().loc[self.features, 'effect'].values
 
 
 class XGBoostClassifier(XGBoostBase, Classifier):
